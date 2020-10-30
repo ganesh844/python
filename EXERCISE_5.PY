@@ -22,17 +22,17 @@ name = input("enter your name ")
  # v : 1
  # d : 2 (again repeat thase aa) mate use kar su temporary variable temp_var = ""
  # a : 1
-temp_var = ""
+temp = ""
 i = 0 #(work as indexing)
 while i < len(name):   #(name of len - 1 = 9 coz start with zero)
     if name[i] not in temp_var:
-        temp_var += name[i]
+        temp += name[i]
         print(f"{name[i]} : {name.count(name[i])}")  # i = 0 (also incresing value of i) # name[i] is charecter (example ;- (f"hello {name}") hello is charecter
-    i+=1   
+    i=i+1   
  
 
  # temporary variable
  # temp_var = "e" ( loop repeat chale se jo temp_var mai char e che toh again count nhi kare
  # before we use in keyword now we use not in
  #if name[i] not in temp_var:
- # now store variable like temp_var = "e" but we store temp_var += name[i]
+ # now  variable like temp_var = "e" but we  temp_var += name[i]
